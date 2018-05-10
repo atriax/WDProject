@@ -4,3 +4,7 @@
 .dropdown:hover > .dropdown-menu {
     display: block;
 }
+
+#main-navbar .nav-link:hover {
+    background: #f8f9fa;
+}

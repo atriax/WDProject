@@ -1,0 +1,111 @@
+.bg-blue {
+    background-color: #3E97D6 !important;
+}
+
+a.bg-blue:hover,
+a.bg-blue:focus,
+button.bg-blue:hover,
+button.bg-blue:focus {
+    background-color: #125a91 !important;
+}
+
+.text-blue {
+    color: #3E97D6 !important;
+}
+
+a.text-blue:hover,
+a.text-blue:focus {
+    color: #125a91 !important;
+}
+
+a {
+    color: #3E97D6;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #125a91;
+    text-decoration: underline;
+}
+
+.border-blue {
+    border-color: #3E97D6 !important;
+}
+
+.btn-blue {
+    color: #fff;
+    background-color: #3E97D6;
+    border-color: #3E97D6;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #125a91;
+    border-color: #052238;
+}
+
+.btn-blue:focus,
+.btn-blue.focus {
+    box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
+}
+
+.btn-blue.disabled,
+.btn-blue:disabled {
+    color: #fff;
+    background-color: #3E97D6;
+    border-color: #3E97D6;
+}
+
+.btn-blue:not(:disabled):not(.disabled):active,
+.btn-blue:not(:disabled):not(.disabled).active,
+.show>.btn-blue.dropdown-toggle {
+    color: #fff;
+    background-color: #052238;
+    border-color: #b21f2d;
+}
+
+.btn-blue:not(:disabled):not(.disabled):active:focus,
+.btn-blue:not(:disabled):not(.disabled).active:focus,
+.show>.btn-blue.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
+}
+
+.btn-outline-blue {
+    color: #3E97D6;
+    background-color: transparent;
+    background-image: none;
+    border-color: #3E97D6;
+}
+
+.btn-outline-blue:hover {
+    color: #fff;
+    background-color: #3E97D6;
+    border-color: #3E97D6;
+}
+
+.btn-outline-blue:focus,
+.btn-outline-blue.focus {
+    box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
+}
+
+.btn-outline-blue.disabled,
+.btn-outline-blue:disabled {
+    color: #3E97D6;
+    background-color: transparent;
+}
+
+.btn-outline-blue:not(:disabled):not(.disabled):active,
+.btn-outline-blue:not(:disabled):not(.disabled).active,
+.show>.btn-outline-blue.dropdown-toggle {
+    color: #fff;
+    background-color: #3E97D6;
+    border-color: #3E97D6;
+}
+
+.btn-outline-blue:not(:disabled):not(.disabled):active:focus,
+.btn-outline-blue:not(:disabled):not(.disabled).active:focus,
+.show>.btn-outline-blue.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
+}

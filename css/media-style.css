@@ -1,0 +1,41 @@
+
+/* small and wider */
+@media (min-width: 576px) {
+
+}
+
+/* medium and wider */
+@media (min-width: 768px) {
+    
+}
+/* large and wider */
+@media (min-width: 992px) {
+    
+}
+
+/* extra large */
+@media (min-width: 1200px) {
+    
+}
+
+
+/* extra small */
+@media (max-width: 576px) {
+    #festival-title{
+        font-size: 27px !important;
+    }
+}
+
+/* small and narrower */
+@media (max-width: 768px) {
+    
+}
+/* medium and narrower */
+@media (max-width: 992px) {
+    
+}
+
+/* large and narrower */
+@media (max-width: 1200px) {
+    
+}
