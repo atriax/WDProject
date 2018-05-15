@@ -1,0 +1,4 @@
+template.html
+	- ubaciti breadcrums
+	- ubaciti zastavice za promenu jezika
+	- postaviti fiksnu siriu banera, da ne mogu 100% (vidi šta bolje izgleda)
