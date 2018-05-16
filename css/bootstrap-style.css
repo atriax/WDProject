@@ -1,3 +1,16 @@
+/* bg-black */
+.bg-black {
+    background-color: #000 !important;
+}
+
+a.bg-black:hover,
+a.bg-black:focus,
+button.bg-black:hover,
+button.bg-black:focus {
+    background-color: #343536 !important;
+}
+
+/* bg-blue */
 .bg-blue {
     background-color: #3E97D6 !important;
 }
@@ -9,6 +22,7 @@ button.bg-blue:focus {
     background-color: #125a91 !important;
 }
 
+/* text-blue */
 .text-blue {
     color: #3E97D6 !important;
 }
@@ -18,6 +32,7 @@ a.text-blue:focus {
     color: #125a91 !important;
 }
 
+/* link */
 a {
     color: #3E97D6;
     text-decoration: none;
@@ -27,13 +42,16 @@ a {
 
 a:hover {
     color: #125a91;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    text-decoration: none !important;
 }
 
+/* border-blue */
 .border-blue {
     border-color: #3E97D6 !important;
 }
 
+/* btn-blue */
 .btn-blue {
     color: #fff;
     background-color: #3E97D6;
@@ -72,6 +90,7 @@ a:hover {
     box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
 }
 
+/* btn-outline-blue */
 .btn-outline-blue {
     color: #3E97D6;
     background-color: transparent;

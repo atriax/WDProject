@@ -17,6 +17,11 @@ Stefan: - films.html
 	- favourites.html
 
 template.html
-	- ubaciti breadcrumbs
-	- ubaciti zastavice za promenu jezika
-	- postaviti fiksnu siriu banera, da ne mogu 100% (vidi šta bolje izgleda)
+	- DONE ubaciti breadcrumbs
+	- DONE ubaciti zastavice za promenu jezika
+	- DONE postaviti fiksnu siriu banera, da ne mogu 100% (vidi Å¡ta bolje izgleda)
+
+- za pozadinu koristiti bg-black. Boja je za sada crna ali mozemo da promenimo lako
+u CSSu. Nije mi se svidela nijansa bg-dark kako izgelda kad sam krenula da radim index
+- ako ti treba neka ikonica baci pogled kako sam ja to odradila, imas klase fa fa-nazivIkonice
+idi na sajt https://fontawesome.com/icons?d=gallery

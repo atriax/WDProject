@@ -9,3 +9,7 @@
     background: #f8f9fa;
 }
 
+.hover-border-blue:hover {
+    border: 1px solid white;
+}
+

@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-dark">
+<body class="bg-black">
 
     <!-- ============== FILM FESTIVAL NAVBAR ================ -->
     <nav class="navbar navbar-expand-md navbar-light bg-blue">
@@ -33,9 +33,10 @@
             <span class="h1 align-middle" id="festival-title">Film Festival 2018</span>
         </div>
         <a href="#" id="language" class="ml-auto mr-1">
-            <img src="images/eng_flag.png" alt="english-language" class="mr-auto">
+            <img src="images/eng_flag_48.png" alt="english-language" class="mr-auto d-none d-sm-block">
+            <img src="images/eng_flag_32.png" alt="english-language" class="mr-auto d-sm-none">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button width="5px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,7 +44,7 @@
 
     <!-- ============== NAVBAR ================ -->
     <header>
-        <nav class="navbar navbar-expand-md bg-dark" id="main-navbar">
+        <nav class="navbar navbar-expand-md bg-black" id="main-navbar">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav nav-pills mx-auto text-blue text-uppercase">
                     <a class="nav-item nav-link h3" href="#">Home
@@ -91,7 +92,7 @@
     <main class="container">
 
         <!-- ============== CAROUSEL ================ -->
-        <div class="row pb-4">
+        <div class="row my-4">
             <div class="col">
                 <div id="carouselId" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -135,75 +136,147 @@
             </div>
         </div>
         <div class="row">
-            <!-- ============== RECOMMENDATIONS ================ -->
-            <div class="col-md-10">
-                <div class="row">
-                    <dv class="col">
-                        <h2 class="text-blue">
-                            Recommendations
-                        </h2>
-                    </dv>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-lg-3 mb-3">
-
-                        <div class="card">
-                            <img class="card-img-top" src="images/movies/blade_runner.jpg" alt="Card image cap">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> -->
+            <!-- ============== MAIN CONTENT ================ -->
+            <div class="col-md-9 col-xl-10">
+                <!-- ============== RECOMMENDATIONS ================ -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <dv class="col">
+                                <h2 class="text-blue">
+                                    Recommendations
+                                </h2>
+                            </dv>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="images/movies/blade_runner.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top img-fluid" src="images/movies/rocky.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/movies/terminator.jpg" alt="Card image cap">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/movies/titanic.jpg" alt="Card image cap">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-3">
 
-                        <div class="card">
-                            <img class="card-img-top" src="images/movies/rocky.jpg" alt="Card image cap">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-
-                        <div class="card">
-                            <img class="card-img-top" src="images/movies/terminator.jpg" alt="Card image cap">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-6 col-lg-3">
-
-                        <div class="card">
-                            <img class="card-img-top" src="images/movies/titanic.jpg" alt="Card image cap">
-                            <!-- <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div> -->
-                        </div>
-                    </div>
                 </div>
 
+                <!-- ============== ABOUT ================ -->
+                <div class="row mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <dv class="col">
+                                <h2 class="text-blue">
+                                    About
+                                </h2>
+                            </dv>
+                        </div>
+                        <div class="row media">
+                            <div class="col-sm-4 text-center">
+                                <img class="img-fluid index-about-img mt-4 " src="images/about1.jpg" alt="about1">
+                            </div>
+                            <div class="col-sm-8 media-body text-light">
+                                <h5 class="mt-0 text-blue">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                        <div class="row media">
+                            <div class="col-sm-8 media-body text-light">
+                                <h5 class="mt-0 text-blue">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                Donec lacinia congue felis in faucibus.
+                            </div>
+                            <div class="col-sm-4 order-first order-sm-last text-center">
+                                <img class="img-fluid index-about-img mt-4" src="images/about1.jpg" alt="about1">
+                            </div>
+                        </div>
+                        <div class="row media">
+                            <div class="col-sm-4 text-center">
+                                <img class="img-fluid index-about-img mt-4" src="images/about1.jpg" alt="about1">
+                            </div>
+                            <div class="col-sm-8 media-body text-light">
+                                <h5 class="mt-0 text-blue">Media heading</h5>
+                                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+                                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                Donec lacinia congue felis in faucibus.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-
+                <!-- ============== ICONS ================ -->
+                <div class="row mb-5 text-center">
+                    <div class="col-lg-4 hover-border-blue p-3">
+                        <a href="#">
+                            <i class="fa fa-film display-1"></i>
+                            <h2>Films</h2>
+                            <p>View all films</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 hover-border-blue p-3">
+                        <a href="#">
+                            <i class="fa fa-ticket-alt display-1 "></i>
+                            <h2>Where to buy tickets?</h2>
+                            <p>A list of retail outlets, and distributors where you can buy tickets.</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 hover-border-blue p-3">
+                        <a href="#">
+                            <i class="fa fa-list-ol display-1 "></i>
+                            <h2>Favourites</h2>
+                            <p>Create your list of movies and share with friends.</p>
+                        </a>
+                    </div>
+                </div>
             </div>
 
+
             <!-- ============== BANNER ================ -->
-            <div class="col-md-2 text-center pt-3">
+            <div class="col-md-3 col-xl-2">
                 <a href="" class="d-none d-md-block">
-                    <img src="images/banner.jpg" alt="banner" class="w-75">
+                    <img src="images/banner.jpg" alt="banner" class="w-100 py-2">
+                </a>
+                <a href="" class="d-none d-md-block">
+                    <img src="images/banner.jpg" alt="banner" class="w-100 py-2">
+                </a>
+                <a href="" class="d-none d-md-block d-lg-none d-xl-block">
+                    <img src="images/banner.jpg" alt="banner" class="w-100 py-2">
                 </a>
                 <a href="" class="d-md-none">
-                    <img src="images/banner-small.JPG" alt="banner" class="w-75">
+                    <img src="images/banner-small.JPG" alt="banner" class="w-100 py-5">
                 </a>
             </div>
         </div>
+
     </main>
 
     <!-- ============== FOOTER ================ -->
-    <footer class="text-light text-center my-5">
-        <span class="font-italic">&copy; 2018 Marija Kostić, Stefan Milanović</span>
-        <br /> Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu
-        <br />
+    <footer class="container my-5">
+        <div class="row">
+            <div class="col text-center text-light">
+                <a href="#">
+                    <i class="fa fa-arrow-up h3 float-right"></i>
+                </a>
+                <p class="font-italic m-0">&copy; 2018 Marija Kostić, Stefan Milanović</p>
+                <p class="m-0">Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>
+            </div>
+        </div>
     </footer>
 
     <script src="js/jquery-3.3.1.min.js"></script>
