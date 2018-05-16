@@ -1,0 +1,22 @@
+podela posla
+Marija: - index.html
+	- info.html
+	- about.html
+	- juries.html
+	- awards.html
+ 	- sponsors.html
+	- program.html
+
+Stefan: - films.html
+	- film.html
+	- showings.html
+	- tickets.html
+	- actors.html
+	- actor.html
+	- news.html
+	- favourites.html
+
+template.html
+	- ubaciti breadcrumbs
+	- ubaciti zastavice za promenu jezika
+	- postaviti fiksnu siriu banera, da ne mogu 100% (vidi šta bolje izgleda)

@@ -24,6 +24,10 @@
     #festival-title{
         font-size: 27px !important;
     }
+
+    #language {
+        height: 30px;
+    }
 }
 
 /* small and narrower */
