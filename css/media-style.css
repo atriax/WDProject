@@ -1,30 +1,42 @@
 /* extra small and wider */
-@media (min-width: 442px) {
-    
-}
+
+@media (min-width: 442px) {}
 
 /* small and wider */
+
 @media (min-width: 576px) {}
 
 /* medium and wider */
-@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+    /* dropdown menu on hover */
+    .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+}
 
 /* large and wider */
+
 @media (min-width: 992px) {}
 
 /* extra large */
+
 @media (min-width: 1200px) {}
 
 /* large and narrower */
+
 @media (max-width: 1200px) {}
 
 /* medium and narrower */
+
 @media (max-width: 992px) {}
 
 /* small and narrower */
+
 @media (max-width: 768px) {}
 
 /* extra small and narrower */
+
 @media (max-width: 576px) {
     #festival-title {
         font-size: 28px !important;
@@ -34,19 +46,15 @@
         padding: 0.32rem 0.50rem;
     }
     .index-about-img {
-        width: 75% !important; 
+        width: 75% !important;
         margin: auto;
     }
-
-    
 }
 
 /* extra extra small */
+
 @media (max-width: 442px) {
     #festival-title {
         font-size: 20px !important;
     }
 }
-
-
-

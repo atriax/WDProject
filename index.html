@@ -13,8 +13,7 @@
     <link rel="icon" type="image/png" href="images/logo.JPG">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -22,7 +21,7 @@
 
 </head>
 
-<body class="bg-black">
+<body class="bg-black text-light">
 
     <!-- ============== FILM FESTIVAL NAVBAR ================ -->
     <nav class="navbar navbar-expand-md navbar-light bg-blue">
@@ -33,8 +32,8 @@
             <span class="h1 align-middle" id="festival-title">Film Festival 2018</span>
         </div>
         <a href="#" id="language" class="ml-auto mr-1">
-            <img src="images/eng_flag_48.png" alt="english-language" class="mr-auto d-none d-sm-block">
-            <img src="images/eng_flag_32.png" alt="english-language" class="mr-auto d-sm-none">
+            <img src="images/srb_flag_48.png" alt="serbian-language" class="mr-auto d-none d-sm-block">
+            <img src="images/srb_flag_32.png" alt="serbian-language" class="mr-auto d-sm-none">
         </a>
         <button width="5px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -46,24 +45,27 @@
     <header>
         <nav class="navbar navbar-expand-md bg-black" id="main-navbar">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="navbar-nav nav-pills mx-auto text-blue text-uppercase">
-                    <a class="nav-item nav-link h3" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
+                <ul class="navbar-nav nav-pills mx-auto text-blue text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link h3" href="index.html">Home</a>
+                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link h3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Info
+                        <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link h3 d-md-none">Info</span>
+                            <a href="info.html" class="nav-link h3 d-none d-md-block">Info</a>
                         </a>
                         <div class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item h5 rounded" href="info.html">Info</a>
+                            <a class="dropdown-item h5 rounded" href="about.html">About</a>
                             <a class="dropdown-item h5 rounded" href="jury.html">Jury</a>
+                            <a class="dropdown-item h5 rounded" href="awards.html">Awards</a>
                             <a class="dropdown-item h5 rounded" href="sponsors.html">Sponsors</a>
                             <a class="dropdown-item h5 rounded" href="contact.html">Contact</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link h3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Repertoire
+                        <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link h3 d-md-none">Repertorie</span>
+                            <a href="repertorie.html" class="nav-link h3 d-none d-md-block">Repertoire</a>
                         </a>
                         <div class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item h5 rounded" href="films.html">Films</a>
@@ -71,7 +73,6 @@
                             <a class="dropdown-item h5 rounded" href="tickets.html">Tickets</a>
                         </div>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link h3" href="actors.html">Actors</a>
                     </li>
@@ -83,7 +84,7 @@
                     <li class="nav-item">
                         <a class="nav-link h3" href="favourites.html">Favourites</a>
                     </li>
-                </div>
+                </ul>
             </div>
         </nav>
     </header>
@@ -137,7 +138,7 @@
         </div>
         <div class="row">
             <!-- ============== MAIN CONTENT ================ -->
-            <div class="col-md-9 col-xl-10">
+            <div class="col-md-10">
                 <!-- ============== RECOMMENDATIONS ================ -->
                 <div class="row mb-5">
                     <div class="col">
@@ -150,24 +151,24 @@
                         </div>
                         <div class="row">
                             <div class="col-6 col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="images/movies/blade_runner.jpg" alt="Card image cap">
-                                </div>
+                                <a href="#">
+                                    <img class="img-fluid" src="images/movies/blade_runner.jpg" alt=" image cap">
+                                </a>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <img class="card-img-top img-fluid" src="images/movies/rocky.jpg" alt="Card image cap">
-                                </div>
+                                <a href="#">
+                                    <img class="img-fluid" src="images/movies/rocky.jpg" alt=" image cap">
+                                </a>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/movies/terminator.jpg" alt="Card image cap">
-                                </div>
+                                <a href="#">
+                                    <img class="img-fluid" src="images/movies/terminator.jpg" alt=" image cap">
+                                </a>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="card">
-                                    <img class="card-img-top" src="images/movies/titanic.jpg" alt="Card image cap">
-                                </div>
+                                <a href="#">
+                                    <img class="img-fluid" src="images/movies/titanic.jpg" alt=" image cap">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -188,7 +189,7 @@
                             <div class="col-sm-4 text-center">
                                 <img class="img-fluid index-about-img mt-4 " src="images/about1.jpg" alt="about1">
                             </div>
-                            <div class="col-sm-8 media-body text-light">
+                            <div class="col-sm-8 media-body">
                                 <h5 class="mt-0 text-blue">Media heading</h5>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
                                 vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
@@ -196,7 +197,7 @@
                             </div>
                         </div>
                         <div class="row media">
-                            <div class="col-sm-8 media-body text-light">
+                            <div class="col-sm-8 media-body">
                                 <h5 class="mt-0 text-blue">Media heading</h5>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
                                 vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
@@ -210,7 +211,7 @@
                             <div class="col-sm-4 text-center">
                                 <img class="img-fluid index-about-img mt-4" src="images/about1.jpg" alt="about1">
                             </div>
-                            <div class="col-sm-8 media-body text-light">
+                            <div class="col-sm-8 media-body">
                                 <h5 class="mt-0 text-blue">Media heading</h5>
                                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in
                                 vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
@@ -222,23 +223,23 @@
 
                 <!-- ============== ICONS ================ -->
                 <div class="row mb-5 text-center">
-                    <div class="col-lg-4 hover-border-blue p-3">
+                    <div class="col-lg-4 hover-border-light p-3">
                         <a href="#">
-                            <i class="fa fa-film display-1"></i>
+                            <i class="display-1 fa fa-film"></i>
                             <h2>Films</h2>
                             <p>View all films</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 hover-border-blue p-3">
+                    <div class="col-lg-4 hover-border-light p-3">
                         <a href="#">
-                            <i class="fa fa-ticket-alt display-1 "></i>
+                            <i class="display-1 fa fa-ticket-alt"></i>
                             <h2>Where to buy tickets?</h2>
                             <p>A list of retail outlets, and distributors where you can buy tickets.</p>
                         </a>
                     </div>
-                    <div class="col-lg-4 hover-border-blue p-3">
+                    <div class="col-lg-4 hover-border-light p-3">
                         <a href="#">
-                            <i class="fa fa-list-ol display-1 "></i>
+                            <i class="display-1 fa fa-list-ol"></i>
                             <h2>Favourites</h2>
                             <p>Create your list of movies and share with friends.</p>
                         </a>
@@ -246,11 +247,10 @@
                 </div>
             </div>
 
-
             <!-- ============== BANNER ================ -->
-            <div class="col-md-3 col-xl-2">
+            <div class="col-md-2">
                 <a href="" class="d-none d-md-block">
-                    <img src="images/banner.jpg" alt="banner" class="w-100 py-2">
+                    <img src="images/banner.jpg" alt="banner" class="w-100 pb-2">
                 </a>
                 <a href="" class="d-none d-md-block">
                     <img src="images/banner.jpg" alt="banner" class="w-100 py-2">
@@ -267,11 +267,11 @@
     </main>
 
     <!-- ============== FOOTER ================ -->
-    <footer class="container my-5">
+    <footer class="container my-3">
         <div class="row">
-            <div class="col text-center text-light">
-                <a href="#">
-                    <i class="fa fa-arrow-up h3 float-right"></i>
+            <div class="col text-center">
+                <a href="#" class="text-blue">
+                    <i class="fa fa-arrow-up h3 float-right" title="Back to the top"></i>
                 </a>
                 <p class="font-italic m-0">&copy; 2018 Marija Kostić, Stefan Milanović</p>
                 <p class="m-0">Odsek za softversko inženjerstvo Elektrotehničkog fakulteta Univerziteta u Beogradu</p>

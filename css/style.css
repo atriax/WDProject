@@ -1,15 +1,21 @@
 
 
-/* dropdown menu on hover */
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
+
 
 #main-navbar .nav-link:hover {
     background: #f8f9fa;
 }
 
-.hover-border-blue:hover {
-    border: 1px solid white;
+.hover-border-light:hover {
+    border: 1px solid #f8f9fa;
 }
+
+.hover-border-blue:hover {
+    border: 1px solid #3E97D6;
+}
+
+.btn-group-vertical a {
+    align-items: flex-start !important;
+}
+
 

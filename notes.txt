@@ -1,11 +1,12 @@
-podela posla
-Marija: - index.html
-	- info.html
-	- about.html
-	- juries.html
+﻿podela posla
+Marija: - DONEv1 index.html 
+	- DONEv1 info.html 
+	- DONEv1 about.html
+	- DONEv1 juries.html
 	- awards.html
  	- sponsors.html
-	- program.html
+	- contact.html
+	- DONEv1 repertoire.html
 
 Stefan: - films.html
 	- film.html
@@ -25,3 +26,6 @@ template.html
 u CSSu. Nije mi se svidela nijansa bg-dark kako izgelda kad sam krenula da radim index
 - ako ti treba neka ikonica baci pogled kako sam ja to odradila, imas klase fa fa-nazivIkonice
 idi na sajt https://fontawesome.com/icons?d=gallery
+
+flags
+-https://www.iconfinder.com/icons/32363/ssenegal_icon#size=32

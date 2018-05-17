@@ -128,3 +128,8 @@ a:hover {
 .show>.btn-outline-blue.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(62, 151, 214, 0.5);
 }
+
+/* bread-crumb */
+.breadcrumb-item.active {
+    color: #000 !important;
+}
