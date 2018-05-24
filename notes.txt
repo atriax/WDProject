@@ -8,13 +8,14 @@ Marija: - DONEv1 index.html
 	- contact.html
 	- DONEv1 repertoire.html
 
-Stefan: - films.html
+	> error u svim stranicama - repertorie umesto repertoire na dva mesta (jedan naziv i jedan link)
+Stefan: - films.html DONE v1 (fali na drugoj stranici samo zameniti filmove)
 	- film.html
-	- showings.html
-	- tickets.html
-	- actors.html
-	- actor.html
-	- news.html
+	- showings.html DONEv1
+	- tickets.html DONEv1
+	- actors.html DONEv1
+	- actor.html DONEv1
+	- news.html DONEv1 
 	- favourites.html
 
 template.html
