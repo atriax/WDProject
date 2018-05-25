@@ -30,3 +30,7 @@ idi na sajt https://fontawesome.com/icons?d=gallery
 
 flags
 -https://www.iconfinder.com/icons/32363/ssenegal_icon#size=32
+
+maps
+
+https://bootstrapious.com/p/google-maps-and-bootstrap-tutorial

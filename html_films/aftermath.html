@@ -20,6 +20,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/media-style.css" />
 
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/custom.css" /> 
+
 </head>
 
 <body class="bg-black text-light">
@@ -165,6 +168,11 @@
                                 <dt class="col-md-6"> Popularity: </dt>
                                 <dd class="col-md-6"> x % </dd>
                             </dl>
+
+                            <div style="text-align: center"> 
+                                <a class="btn btn-outline-blue" style="margin: auto" href="#reservation">Reserve now</a>  
+                            </div>
+                            
                         </p>
 
                     </div>
@@ -183,9 +191,68 @@
 
                 <div class="row mt-5">
                     <div class="col-md-12">
+                        <h3> Trailer </h3>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ZN8toxhSn9Y" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h3> Latest showing </h3>
+                        <div id="map">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h3> Showings </h3> 
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <h3> Gallery </h3>
                         <a href="../images/films/aftermath.png" data-lightbox="trailer" data-title="Aftermath" data-alt="Aftermath"> Aftermath </a>
                     </div>
                 </div> 
+
+                <div class="row mt-5">
+                    <div class="col-md-12" id="reservation">
+                        <h3> Reserve your ticket </h3>
+                        <form name="reservationForm" method="POST" action="">
+                            <div class="form-group">
+                                <label for="nameField"> Name </label>
+                                <input type="text" class="form-control" id="nameField" aria-describedby="nameHelp" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="surnameField"> Surname </label>
+                                <input type="text" class="form-control" id="surnameField" aria-describedby="surnameHelp" placeholder="Enter your surname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneField"> Phone </label>
+                                <input type="text" class="form-control" id="phoneField" aria-describedby="phoneHelp" placeholder="Let us know how we can contact you">
+                            </div>
+                            <div class="form-group">
+                                <label for="nameField"> Email </label>
+                                <input type="email" class="form-control" id="mailField" aria-describedby="mailHelp" placeholder="name@example.com">
+                                <small id="emailHelp" class="form-text text-muted"> We'll never share your email address with anyone else. </small> 
+                            </div>
+
+                            <div class="form-group">
+                                <label for="showingChoice"> Choose a showing </label>
+                                <select class="form-control" id="showingChoice">
+                                    <option> Kinoteka - 27 May - 16:30 - 350 RSD </option>
+                                    <option> Cultural Centre of Belgrade - 1 June - 14:30 - 300 RSD</option> 
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-blue mt-3"> Reserve </button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
             <!-- ============== BANNER ================ -->
@@ -223,6 +290,9 @@
     <script src="../js/lightbox.js"></script>
 
     <script src="../js/script.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script src="../js/custom.js"></script>
 </body>
 
 </html>
