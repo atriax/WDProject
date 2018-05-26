@@ -71,14 +71,13 @@ repertoire.html
 - popraviti tekst
 	
 films.html(fali na drugoj stranici samo zameniti filmove)
-- ubaciti linkove ka glumcima
-- da li se popularity racuna na neki nacin?
-- napraviti sort
-- na films2 popuniti nove filmove
+- ubaciti linkove ka glumcima NE MORA
+- napraviti sort za showings
 - napraviti srpsku verziju
 
 film.html
-- dodati jos filmova
+- dodati jos filmova (ispopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js)
+- za filmove na sprposkom napraviti novi niz sa podacima na srpskom
 - proveriti regex, trenbalo bi da rade
 
 showings.html
@@ -96,7 +95,7 @@ news.html
 - slike su cudne
 
 favourites.html
-- napraviti stranicu
+- napraviti stranicu na srpskom
 - omogućiti ovaj mehanizam
 
 

@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="showFilms(0)">
     <!-- ============== FILM FESTIVAL NAVBAR ================ -->
     <nav class="navbar navbar-expand-md navbar-light bg-blue">
         <div class="navbar-brand">
@@ -120,245 +120,305 @@
             <!-- ============== LEFT NAVIGATION ================ -->
             <nav class="col-md-3 col-xl-2 mb-3">
                 <div class="btn-group-vertical w-100" role="group">
-                    <a href="" class="btn btn-outline-blue active font-weight-bold">Sort films</a>
-                    <a href="films_sorted_name.html" class="btn btn-outline-blue">By name</a>
-                    <a href="films_sorted_showings.html" class="btn btn-outline-blue">By showing</a>
-                    <a href="films_sorted_popularity.html" class="btn btn-outline-blue">By popularity</a>
+                    <span class="btn btn-outline-blue active font-weight-bold">Sort films</span>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(0, 0)">By name</a>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(1, 0)">By showing</a>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(2, 0)">By popularity</a>
                 </div>
             </nav>
 
             <!-- ============== MAIN CONTENT ================ -->
             <div class="col-md-9 col-xl-10" id="films">
 
-                <!-- ============== AFTERMATH ================ -->
-                <div class="row mt-3">
+                <!-- ============== FILM1 ================ -->
+                <div class="row mt-3" id="film1">
                     <div class="col-sm-4 col-xl-3">
-                        <img src="images/films/Aftermath.png" class="img-fluid mx-auto d-block" alt="AfterMath">
+                        <img id="img1" src="" class="img-fluid mx-auto d-block" alt="AfterMath">
                     </div>
                     <div class="col-sm-8 col-xl-5">
-                        <h3 class="text-blue font-italic"> Aftermath </h3>
-                        <dl class="row">
-                            <dt class="col-md-6"> Directed by: </dt>
-                            <dd class="col-md-6"> Elliot Lester </dd>
-                            <dt class="col-md-6"> Running time: </dt>
-                            <dd class="col-md-6"> 92 minutes </dd>
-                            <dt class="col-md-6"> Starring: </dt>
-                            <dd class="col-md-6"> Arnold Schwarzenegger, Scoot McNairy, Maggie Grace, Martin Donovan</dd>
-                            <dt class="col-md-6"> Release date: </dt>
-                            <dd class="col-md-6"> April 7, 2017 </dd>
-                            <dt class="col-md-4"> Country:</dt>
-                            <dd class="col-md-8"> USA </dd>
-                            <dt class="col-md-4"> Popularity:</dt>
-                            <dd class="col-md-8"> X % </dd>
-                        </dl>
-
-                        <a class="btn btn-outline-blue" href="html_films/aftermath.html"> Details </a>
-                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
-                            <i class="far fa-heart"></i>
-                        </button>
-                    </div>
-                    <div class="col-xl-4  rounded">
-                        <h3 class="text-center"> Showings </h3>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Kinoteka </div>
-                            <div class="card-body p-0">
-                                <b> Date: </b> 27 May
-                                <br/>
-                                <b> Time: </b> 16:30
-                                <br/>
-                                <b> Cost: </b> 350 RSD
-                            </div>
-                        </div>
-
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cultural Centre of Belgrade </div>
-                            <div class="card-body p-0">
-                                <b> Date: </b> 1 June
-                                <br/>
-                                <b> Time: </b> 14:00
-                                <br/>
-                                <b> Cost: </b> 300 RSD
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ============== BLADE RUNNER ================ -->
-                <div class="row mt-3">
-                    <div class="col-sm-4 col-xl-3">
-                        <img src="images/films/BladeRunner2049.png" class="img-fluid mx-auto d-block" alt="Blade Runner 2049">
-                    </div>
-                    <div class="col-sm-8 col-xl-5">
-                        <h3 class="text-blue font-italic"> Blade Runner 2049 </h3>
+                        <h3 class="text-blue font-italic" id="name1">  </h3>
                         <dl class="row">
                             <dt class="col-md-4"> Directed by: </dt>
-                            <dd class="col-md-8"> Denis Villeneuve </dd>
+                            <dd class="col-md-8" id="director1">  </dd>
                             <dt class="col-md-4"> Running time: </dt>
-                            <dd class="col-md-8"> 163 minutes </dd>
+                            <dd class="col-md-8" id="runningTime1">  </dd>
                             <dt class="col-md-4"> Starring: </dt>
-                            <dd class="col-md-8"> Ryan Gosling Harrison Ford, Ana de Armas, Sylvia Hoeks, Lennie James, Dave Bautista, Jared Leto</dd>
+                            <dd class="col-md-8" id="actors1">  </dd>
                             <dt class="col-md-4"> Release date: </dt>
-                            <dd class="col-md-8"> October 3, 2017 </dd>
+                            <dd class="col-md-8" id="releaseDate1">  </dd>
                             <dt class="col-md-4"> Country:</dt>
-                            <dd class="col-md-8"> USA </dd>
+                            <dd class="col-md-8" id="country1">  </dd>
                             <dt class="col-md-4"> Popularity:</dt>
-                            <dd class="col-md-8"> X % </dd>
+                            <dd class="col-md-8" id="popularity1">  </dd>
                         </dl>
 
-                        <a class="btn btn-outline-blue mr-2" href="html_films/bladerunner2049.html"> Details </a>
+                        <a class="btn btn-outline-blue" href="html_films/" id="link1"> Details </a>
                         <button type="button" class="btn btn-outline-blue ml-4" onclick="">
                             <i class="far fa-heart"></i>
                         </button>
                     </div>
                     <div class="col-xl-4  rounded">
                         <h3 class="text-center"> Showings </h3>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Fontana </div>
+                        <div class="mt-3 card text-center" id="showing11">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place11">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 24 May
+                                <b> Date: </b>
+                                <span id="date11">  </span>
                                 <br/>
-                                <b> Time: </b> 19:30
+                                <b> Time: </b>
+                                <span id="time11">  </span>
                                 <br/>
-                                <b> Cost: </b> 300 RSD
+                                <b> Cost: </b>
+                                <span id="cost11">  </span>
                             </div>
                         </div>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cineplexx TC Usce </div>
+
+                        <div class="mt-3 card text-center" id="showing12">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place12">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 25 May
+                                <b> Date: </b>
+                                <span id="date12">  </span>
                                 <br/>
-                                <b> Time: </b> 22:00
+                                <b> Time: </b>
+                                <span id="time12">  </span>
                                 <br/>
-                                <b> Cost: </b> 350 RSD
+                                <b> Cost: </b>
+                                <span id="cost12">  </span>
                             </div>
                         </div>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cultural Centre of Belgrade </div>
+
+                        <div class="mt-3 card text-center" id="showing13">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place13">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 26 May
+                                <b> Date: </b>
+                                <span id="date13">  </span>
                                 <br/>
-                                <b> Time: </b> 18:00
+                                <b> Time: </b>
+                                <span id="time13">  </span>
                                 <br/>
-                                <b> Cost: </b> 400 RSD
+                                <b> Cost: </b>
+                                <span id="cost13">  </span>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- ============== CREED ================ -->
-                <div class="row mt-3">
+                <!-- ============== FILM2 ================ -->
+                <div class="row mt-3" id="film2">
                     <div class="col-sm-4 col-xl-3">
-                        <img src="images/films/Creed.jpg" class="img-fluid mx-auto d-block" alt="Creed">
+                        <img id="img2" src="" class="img-fluid mx-auto d-block" alt="AfterMath">
                     </div>
                     <div class="col-sm-8 col-xl-5">
-                        <h3 class="text-blue font-italic"> Creed </h3>
+                        <h3 class="text-blue font-italic" id="name2">  </h3>
                         <dl class="row">
                             <dt class="col-md-4"> Directed by: </dt>
-                            <dd class="col-md-8"> Ryan Coogler </dd>
+                            <dd class="col-md-8" id="director2">  </dd>
                             <dt class="col-md-4"> Running time: </dt>
-                            <dd class="col-md-8"> 133 minutes </dd>
+                            <dd class="col-md-8" id="runningTime2">  </dd>
                             <dt class="col-md-4"> Starring: </dt>
-                            <dd class="col-md-8"> Michael B. Jordan, Sylvester Stallone, Tessa Thompson, Phylicia Rashad, Anthony Bellew</dd>
+                            <dd class="col-md-8" id="actors2">  </dd>
                             <dt class="col-md-4"> Release date: </dt>
-                            <dd class="col-md-8"> November 19, 2015 </dd>
+                            <dd class="col-md-8" id="releaseDate2">  </dd>
                             <dt class="col-md-4"> Country:</dt>
-                            <dd class="col-md-8"> USA </dd>
+                            <dd class="col-md-8" id="country2">  </dd>
                             <dt class="col-md-4"> Popularity:</dt>
-                            <dd class="col-md-8"> X % </dd>
+                            <dd class="col-md-8" id="popularity2">  </dd>
                         </dl>
-                        <a class="btn btn-outline-blue" href="html_films/creed.html"> Details </a>
+
+                        <a class="btn btn-outline-blue" href="html_films/" id="link2"> Details </a>
                         <button type="button" class="btn btn-outline-blue ml-4" onclick="">
                             <i class="far fa-heart"></i>
                         </button>
-
                     </div>
                     <div class="col-xl-4  rounded">
                         <h3 class="text-center"> Showings </h3>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Kinoteka </div>
+                        <div class="mt-3 card text-center" id="showing21">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place21">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 28 May
+                                <b> Date: </b>
+                                <span id="date21">  </span>
                                 <br/>
-                                <b> Time: </b> 22:00
+                                <b> Time: </b>
+                                <span id="time21">  </span>
                                 <br/>
-                                <b> Cost: </b> 400 RSD
+                                <b> Cost: </b>
+                                <span id="cost21">  </span>
                             </div>
                         </div>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cineplexx TC Usce </div>
+
+                        <div class="mt-3 card text-center" id="showing22">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place22">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 30 May
+                                <b> Date: </b>
+                                <span id="date22">  </span>
                                 <br/>
-                                <b> Time: </b> 13:30
+                                <b> Time: </b>
+                                <span id="time22">  </span>
                                 <br/>
-                                <b> Cost: </b> 300 RSD
+                                <b> Cost: </b>
+                                <span id="cost22">  </span>
                             </div>
                         </div>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Academy 28 </div>
+                        <div class="mt-3 card text-center" id="showing23">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place23">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 2 June
+                                <b> Date: </b>
+                                <span id="date23">  </span>
                                 <br/>
-                                <b> Time: </b> 18:00
+                                <b> Time: </b>
+                                <span id="time23">  </span>
                                 <br/>
-                                <b> Cost: </b> 300 RSD
+                                <b> Cost: </b>
+                                <span id="cost23">  </span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- ============== KILLER ELITE ================ -->
-                <div class="row mt-3">
+                <!-- ============== FILM3 ================ -->
+                <div class="row mt-3" id="film3">
                     <div class="col-sm-4 col-xl-3">
-                        <img src="images/films/KillerElite.jpg" class="img-fluid mx-auto d-block" alt="killer Elite">
+                        <img id="img3" src="" class="img-fluid mx-auto d-block" alt="AfterMath">
                     </div>
-
                     <div class="col-sm-8 col-xl-5">
-                        <h3 class="text-blue font-italic"> Killer Elite </h3>
+                        <h3 class="text-blue font-italic" id="name3">  </h3>
                         <dl class="row">
                             <dt class="col-md-4"> Directed by: </dt>
-                            <dd class="col-md-8"> Gary McKendry </dd>
+                            <dd class="col-md-8" id="director3">  </dd>
                             <dt class="col-md-4"> Running time: </dt>
-                            <dd class="col-md-8"> 114 minutes </dd>
+                            <dd class="col-md-8" id="runningTime3">  </dd>
                             <dt class="col-md-4"> Starring: </dt>
-                            <dd class="col-md-8"> Jason Statham, Yvonne Strahovski, Clive Owen, Robert De Niro, Dominic Purcell</dd>
+                            <dd class="col-md-8" id="actors3">  </dd>
                             <dt class="col-md-4"> Release date: </dt>
-                            <dd class="col-md-8"> September 10, 2011 </dd>
+                            <dd class="col-md-8" id="releaseDate3">  </dd>
                             <dt class="col-md-4"> Country:</dt>
-                            <dd class="col-md-8"> USA </dd>
+                            <dd class="col-md-8" id="country3">  </dd>
                             <dt class="col-md-4"> Popularity:</dt>
-                            <dd class="col-md-8"> X % </dd>
+                            <dd class="col-md-8" id="popularity3">  </dd>
                         </dl>
-                        <a class="btn btn-outline-blue" href="html_films/creed.html"> Details </a>
+
+                        <a class="btn btn-outline-blue" href="html_films/" id="link3"> Details </a>
                         <button type="button" class="btn btn-outline-blue ml-4" onclick="">
                             <i class="far fa-heart"></i>
                         </button>
-
                     </div>
-
                     <div class="col-xl-4  rounded">
                         <h3 class="text-center"> Showings </h3>
-                        <div class="mt-3 card text-center">
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Fontana </div>
+                        <div class="mt-3 card text-center" id="showing31">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place31">  </div>
                             <div class="card-body p-0">
-                                <b> Date: </b> 24 May
+                                <b> Date: </b>
+                                <span id="date31">  </span>
                                 <br/>
-                                <b> Time: </b> 17:00
+                                <b> Time: </b>
+                                <span id="time31">  </span>
                                 <br/>
-                                <b> Cost: </b> 350 RSD
-                            </div>
-                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Academy 28 </div>
-                            <div class="card-body p-0">
-                                <b> Date: </b> 26 May
-                                <br/>
-                                <b> Time: </b> 22:00
-                                <br/>
-                                <b> Cost: </b> 300 RSD
+                                <b> Cost: </b>
+                                <span id="cost31">  </span>
                             </div>
                         </div>
 
+                        <div class="mt-3 card text-center" id="showing32">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place32">  </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b>
+                                <span id="date32">  </span>
+                                <br/>
+                                <b> Time: </b>
+                                <span id="time32">  </span>
+                                <br/>
+                                <b> Cost: </b>
+                                <span id="cost32">  </span>
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center" id="showing33">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place33">  </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b>
+                                <span id="date33">  </span>
+                                <br/>
+                                <b> Time: </b>
+                                <span id="time33">  </span>
+                                <br/>
+                                <b> Cost: </b>
+                                <span id="cost33">  </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <!-- ============== FILM4 ================ -->
+                <div class="row mt-3" id="film4">
+                    <div class="col-sm-4 col-xl-3">
+                        <img id="img4" src="" class="img-fluid mx-auto d-block" alt="AfterMath">
+                    </div>
+                    <div class="col-sm-8 col-xl-5">
+                        <h3 class="text-blue font-italic" id="name4">  </h3>
+                        <dl class="row">
+                            <dt class="col-md-4"> Directed by: </dt>
+                            <dd class="col-md-8" id="director4">  </dd>
+                            <dt class="col-md-4"> Running time: </dt>
+                            <dd class="col-md-8" id="runningTime4">  </dd>
+                            <dt class="col-md-4"> Starring: </dt>
+                            <dd class="col-md-8" id="actors4">  </dd>
+                            <dt class="col-md-4"> Release date: </dt>
+                            <dd class="col-md-8" id="releaseDate4">  </dd>
+                            <dt class="col-md-4"> Country:</dt>
+                            <dd class="col-md-8" id="country4">  </dd>
+                            <dt class="col-md-4"> Popularity:</dt>
+                            <dd class="col-md-8" id="popularity4">  </dd>
+                        </dl>
+
+                        <a class="btn btn-outline-blue" href="html_films/" id="link4"> Details </a>
+                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="col-xl-4  rounded">
+                        <h3 class="text-center"> Showings </h3>
+                        <div class="mt-3 card text-center" id="showing41">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place41">  </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b>
+                                <span id="date41">  </span>
+                                <br/>
+                                <b> Time: </b>
+                                <span id="time41">  </span>
+                                <br/>
+                                <b> Cost: </b>
+                                <span id="cost41">  </span>
+                            </div>
+                        </div>
+
+                        <div class="mt-3 card text-center" id="showing42">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place42">  </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b>
+                                <span id="date42">  </span>
+                                <br/>
+                                <b> Time: </b>
+                                <span id="time42">  </span>
+                                <br/>
+                                <b> Cost: </b>
+                                <span id="cost42">  </span>
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center" id="showing43">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place43">  </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b>
+                                <span id="date43">  </span>
+                                <br/>
+                                <b> Time: </b>
+                                <span id="time43">  </span>
+                                <br/>
+                                <b> Cost: </b>
+                                <span id="cost43">  </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <!-- ============== PAGINATION ================ -->
                 <div class="row mt-5 mb-3">
@@ -387,7 +447,6 @@
                         </nav>
                     </div>
                 </div>
-
             </div>
 
         </div>
