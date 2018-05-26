@@ -42,23 +42,23 @@ https://bootstrapious.com/p/google-maps-and-bootstrap-tutorial
 - umesto back to the top staviti nazad na vrh
 - pregeldati sve stranice u mobile view
 
-index.html 
-- namestiti linkove ka vestima
-- namestiti linkove ka filmovima
-- namestiti fotografiju banera i linkove sa njih
-- izmizliti tekst i slike za about
-- podesiti alt za banere
+index.html - DONE
+- namestiti linkove ka vestima DONE
+- namestiti linkove ka filmovima DONE
+- namestiti fotografiju banera i linkove sa njih ?
+- izmizliti tekst i slike za about DONE
+- podesiti alt za banere DONE
 
-info.html
+info.html DONE
 - popraviti tekst
 
 about.html
 - DONE
 
-juries.html
+juries.html DONE
 - na engleskoj stranici prevesti tekst
 
-awards.html
+awards.html DONE
 - na engleskoj stranici prevesti tekst
 
 sponsors.html
@@ -67,7 +67,7 @@ sponsors.html
 contact.html
 - DONE
 
-repertoire.html
+repertoire.html DONE
 - popraviti tekst
 	
 films.html(fali na drugoj stranici samo zameniti filmove)
@@ -78,7 +78,7 @@ films.html(fali na drugoj stranici samo zameniti filmove)
 - podesiti da rade srca - skidanje, niz booleana
 
 film.html
-- dodati jos filmova (ispopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js)
+- dodati jos filmova (ispopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js) DONE
 - za filmove na sprposkom napraviti novi niz sa podacima na srpskom
 - proveriti regex, trenbalo bi da rade
 - podesiti lokacije
