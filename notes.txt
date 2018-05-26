@@ -71,14 +71,17 @@ repertoire.html
 - popraviti tekst
 	
 films.html(fali na drugoj stranici samo zameniti filmove)
+- popraviti sort!
 - ubaciti linkove ka glumcima NE MORA
 - napraviti sort za showings
 - napraviti srpsku verziju
+- podesiti da rade srca - skidanje, niz booleana
 
 film.html
 - dodati jos filmova (ispopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js)
 - za filmove na sprposkom napraviti novi niz sa podacima na srpskom
 - proveriti regex, trenbalo bi da rade
+- podesiti lokacije
 
 showings.html
 - DONE

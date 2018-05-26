@@ -159,8 +159,6 @@ class Film {
             document.getElementById("showing" + id + (i + 1)).className += " d-none";
         }
     }
-
-
 }
 /* prikazuje film na posebnoj stranici */
 
@@ -409,7 +407,7 @@ function showFilms(page) {
         alert("No session strage");
         return;
     }
-    for (j = page; j < page * 4 + 4; j++) {
+    for (j = page * 4; j < page * 4 + 4; j++) {
         if (order[j] < films.length) {
             films[order[j]].showFilmm(j % 4 + 1);
         } else {
