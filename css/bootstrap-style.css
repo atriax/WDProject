@@ -22,6 +22,17 @@ button.bg-blue:focus {
     background-color: #125a91 !important;
 }
 
+.bg-light-blue {
+    background-color: #BFE1F9 !important;
+}
+
+a.bg-light-blue:hover,
+a.bg-light-blue:focus,
+button.bg-light-blue:hover,
+button.bg-light-blue:focus {
+    background-color: #3E97D6 !important;
+}
+
 /* text-blue */
 .text-blue {
     color: #3E97D6 !important;
@@ -30,6 +41,16 @@ button.bg-blue:focus {
 a.text-blue:hover,
 a.text-blue:focus {
     color: #125a91 !important;
+}
+
+/* text-black */
+.text-black {
+    color: #000 !important;
+}
+
+a.text-black:hover,
+a.text-black:focus {
+    color: #343536 !important;
 }
 
 /* link */
@@ -132,4 +153,14 @@ a:hover {
 /* bread-crumb */
 .breadcrumb-item.active {
     color: #000 !important;
+}
+
+/* pagination */ 
+.page-item.active .page-link {
+    background-color: #3E97D6;
+    border-color: #3E97D6;
+}
+
+.page-link {
+    color: #3E97D6;
 }

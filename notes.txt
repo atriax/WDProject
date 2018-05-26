@@ -3,18 +3,19 @@ Marija: - DONEv1 index.html
 	- DONEv1 info.html 
 	- DONEv1 about.html
 	- DONEv1 juries.html
-	- awards.html
- 	- sponsors.html
-	- contact.html
+	- DONEv1 awards.html
+ 	- DONEv1 sponsors.html
+	- DONEv1 contact.html
 	- DONEv1 repertoire.html
 
-Stefan: - films.html
+	
+Stefan: - films.html DONE v1 (fali na drugoj stranici samo zameniti filmove)
 	- film.html
-	- showings.html
-	- tickets.html
-	- actors.html
-	- actor.html
-	- news.html
+	- showings.html DONEv1
+	- tickets.html DONEv1
+	- actors.html DONEv1
+	- actor.html DONEv1
+	- news.html DONEv1 
 	- favourites.html
 
 template.html
@@ -29,3 +30,74 @@ idi na sajt https://fontawesome.com/icons?d=gallery
 
 flags
 -https://www.iconfinder.com/icons/32363/ssenegal_icon#size=32
+
+maps
+https://bootstrapious.com/p/google-maps-and-bootstrap-tutorial
+
+- proveriti ostale browser-e
+
+- proveriti linkove sa zastavicama
+- proveriti naslove stranica
+- proveriti bannere
+- umesto back to the top staviti nazad na vrh
+- pregeldati sve stranice u mobile view
+
+index.html 
+- namestiti linkove ka vestima
+- namestiti linkove ka filmovima
+- namestiti fotografiju banera i linkove sa njih
+- izmizliti tekst i slike za about
+- podesiti alt za banere
+
+info.html
+- popraviti tekst
+
+about.html
+- DONE
+
+juries.html
+- na engleskoj stranici prevesti tekst
+
+awards.html
+- na engleskoj stranici prevesti tekst
+
+sponsors.html
+- DONE
+
+contact.html
+- DONE
+
+repertoire.html
+- popraviti tekst
+	
+films.html(fali na drugoj stranici samo zameniti filmove)
+- ubaciti linkove ka glumcima
+- da li se popularity racuna na neki nacin?
+- napraviti sort
+- na films2 popuniti nove filmove
+- napraviti srpsku verziju
+
+film.html
+- dodati jos filmova
+- proveriti regex, trenbalo bi da rade
+
+showings.html
+- DONE
+tickets.html
+- DONE
+
+actors.html
+- uvezati linkove sa glumcima
+
+actor.html
+- dodati jos glumaca
+
+news.html
+- slike su cudne
+
+favourites.html
+- napraviti stranicu
+- omogućiti ovaj mehanizam
+
+
+Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade

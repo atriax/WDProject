@@ -1,24 +1,100 @@
+body {
+    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+}
 
+/* navbar */
 
-
+#main-navbar .nav-link {
+    border: 1px solid #fff;
+}
 
 #main-navbar .nav-link:hover {
-    background: #f8f9fa;
+    border: 1px solid #3E97D6;
 }
 
-.hover-border-light:hover {
-    border: 1px solid #f8f9fa;
-}
+/* index icons */
 
 .hover-border-blue:hover {
     border: 1px solid #3E97D6;
 }
 
+/* left menu */
+
 .btn-group-vertical a {
     align-items: flex-start !important;
 }
 
+/* carousel */
+
+.carousel-item img {
+    height: 500px;
+}
+
+/* sponsors */
+
 .sponsor-img:hover {
     opacity: 0.5;
-} 
+}
 
+/* tickets */
+.ticket-info {
+    border: 2px solid #3E97D6;
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 2%;
+    color: #000;
+}
+
+.ticket-info b {
+    color: #3E97D6;
+}
+
+.ticket-info:hover {
+    opacity: 0.6;
+}
+
+
+#films img {
+    border-radius: 10px;
+}
+
+#film dt {
+    color: #3E97D6;
+}
+
+#film h2 {
+    color: #3E97D6;
+    text-align: center;
+}
+
+
+
+.force-to-bottom {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+}
+
+#main_news img {
+    border-radius: 5px;
+}
+
+#main_news h3 {
+    color: #3E97D6;
+}
+
+
+/* google map */
+
+#map {
+    height: 400px;
+}
+
+.info-window {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 
+h1{
+    text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 40px;
+} */

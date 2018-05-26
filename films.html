@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Films</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="images/logo.png">
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/web-fonts-with-css/css/fontawesome-all.min.css">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap-style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/media-style.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- ============== FILM FESTIVAL NAVBAR ================ -->
+    <nav class="navbar navbar-expand-md navbar-light bg-blue">
+        <div class="navbar-brand">
+            <a href="index.html" class="d-none d-md-inline">
+                <img src="images/logo.png">
+            </a>
+            <a href="index.html">
+                <span class="h1 align-middle text-black" id="festival-title">Film Festival 2018</span>
+            </a>
+        </div>
+        <a href="filmovi.html" id="language" class="ml-auto mr-1">
+            <img src="images/srb_flag_48.png" alt="serbian-language" class="mr-auto d-none d-sm-block">
+            <img src="images/srb_flag_32.png" alt="serbian-language" class="mr-auto d-sm-none">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <!-- ============== NAVBAR ================ -->
+    <header>
+        <nav class="navbar navbar-expand-md" id="main-navbar">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills mx-auto text-blue text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link h4" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link h4 d-md-none">Info</span>
+                            <a href="info.html" class="nav-link h4 d-none d-md-block">Info</a>
+                        </a>
+                        <div class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item h6 rounded" href="about.html">About</a>
+                            <a class="dropdown-item h6 rounded" href="jury.html">Jury</a>
+                            <a class="dropdown-item h6 rounded" href="awards.html">Awards</a>
+                            <a class="dropdown-item h6 rounded" href="sponsors.html">Sponsors</a>
+                            <a class="dropdown-item h6 rounded" href="contact.html">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="nav-link h4 d-md-none">Repertoire</span>
+                            <a href="repertoire.html" class="nav-link h4 d-none d-md-block">Repertoire</a>
+                        </a>
+                        <div class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item h6 rounded" href="films.html">Films</a>
+                            <a class="dropdown-item h6 rounded" href="showings.html">Showings</a>
+                            <a class="dropdown-item h6 rounded" href="tickets.html">Tickets</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link h4" href="actors.html">Actors</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link h4" href="news.html">News</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link h4" href="favourites.html">Favourites</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============== MAIN ================ -->
+    <main class="container">
+
+        <!-- ============== BREADCRUMBS ================ -->
+        <div class="row">
+            <div class="col">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-light-blue">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a href="repertoire.html">Repertoire</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Films</li>
+                    </ol>
+                </nav>
+
+                <!-- <hr class="bg-blue" /> -->
+            </div>
+        </div>
+        <div class="row">
+
+            <!-- ============== LEFT NAVIGATION ================ -->
+            <nav class="col-md-3 col-xl-2 mb-3">
+                <div class="btn-group-vertical w-100" role="group">
+                    <a href="" class="btn btn-outline-blue active font-weight-bold">Sort films</a>
+                    <a href="films_sorted_name.html" class="btn btn-outline-blue">By name</a>
+                    <a href="films_sorted_showings.html" class="btn btn-outline-blue">By showing</a>
+                    <a href="films_sorted_popularity.html" class="btn btn-outline-blue">By popularity</a>
+                </div>
+            </nav>
+
+            <!-- ============== MAIN CONTENT ================ -->
+            <div class="col-md-9 col-xl-10" id="films">
+
+                <!-- ============== AFTERMATH ================ -->
+                <div class="row mt-3">
+                    <div class="col-sm-4 col-xl-3">
+                        <img src="images/films/Aftermath.png" class="img-fluid mx-auto d-block" alt="AfterMath">
+                    </div>
+                    <div class="col-sm-8 col-xl-5">
+                        <h3 class="text-blue font-italic"> Aftermath </h3>
+                        <dl class="row">
+                            <dt class="col-md-6"> Directed by: </dt>
+                            <dd class="col-md-6"> Elliot Lester </dd>
+                            <dt class="col-md-6"> Running time: </dt>
+                            <dd class="col-md-6"> 92 minutes </dd>
+                            <dt class="col-md-6"> Starring: </dt>
+                            <dd class="col-md-6"> Arnold Schwarzenegger, Scoot McNairy, Maggie Grace, Martin Donovan</dd>
+                            <dt class="col-md-6"> Release date: </dt>
+                            <dd class="col-md-6"> April 7, 2017 </dd>
+                            <dt class="col-md-4"> Country:</dt>
+                            <dd class="col-md-8"> USA </dd>
+                            <dt class="col-md-4"> Popularity:</dt>
+                            <dd class="col-md-8"> X % </dd>
+                        </dl>
+
+                        <a class="btn btn-outline-blue" href="html_films/aftermath.html"> Details </a>
+                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="col-xl-4  rounded">
+                        <h3 class="text-center"> Showings </h3>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Kinoteka </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 27 May
+                                <br/>
+                                <b> Time: </b> 16:30
+                                <br/>
+                                <b> Cost: </b> 350 RSD
+                            </div>
+                        </div>
+
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cultural Centre of Belgrade </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 1 June
+                                <br/>
+                                <b> Time: </b> 14:00
+                                <br/>
+                                <b> Cost: </b> 300 RSD
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============== BLADE RUNNER ================ -->
+                <div class="row mt-3">
+                    <div class="col-sm-4 col-xl-3">
+                        <img src="images/films/BladeRunner2049.png" class="img-fluid mx-auto d-block" alt="Blade Runner 2049">
+                    </div>
+                    <div class="col-sm-8 col-xl-5">
+                        <h3 class="text-blue font-italic"> Blade Runner 2049 </h3>
+                        <dl class="row">
+                            <dt class="col-md-4"> Directed by: </dt>
+                            <dd class="col-md-8"> Denis Villeneuve </dd>
+                            <dt class="col-md-4"> Running time: </dt>
+                            <dd class="col-md-8"> 163 minutes </dd>
+                            <dt class="col-md-4"> Starring: </dt>
+                            <dd class="col-md-8"> Ryan Gosling Harrison Ford, Ana de Armas, Sylvia Hoeks, Lennie James, Dave Bautista, Jared Leto</dd>
+                            <dt class="col-md-4"> Release date: </dt>
+                            <dd class="col-md-8"> October 3, 2017 </dd>
+                            <dt class="col-md-4"> Country:</dt>
+                            <dd class="col-md-8"> USA </dd>
+                            <dt class="col-md-4"> Popularity:</dt>
+                            <dd class="col-md-8"> X % </dd>
+                        </dl>
+
+                        <a class="btn btn-outline-blue mr-2" href="html_films/bladerunner2049.html"> Details </a>
+                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="col-xl-4  rounded">
+                        <h3 class="text-center"> Showings </h3>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Fontana </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 24 May
+                                <br/>
+                                <b> Time: </b> 19:30
+                                <br/>
+                                <b> Cost: </b> 300 RSD
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cineplexx TC Usce </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 25 May
+                                <br/>
+                                <b> Time: </b> 22:00
+                                <br/>
+                                <b> Cost: </b> 350 RSD
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cultural Centre of Belgrade </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 26 May
+                                <br/>
+                                <b> Time: </b> 18:00
+                                <br/>
+                                <b> Cost: </b> 400 RSD
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============== CREED ================ -->
+                <div class="row mt-3">
+                    <div class="col-sm-4 col-xl-3">
+                        <img src="images/films/Creed.jpg" class="img-fluid mx-auto d-block" alt="Creed">
+                    </div>
+                    <div class="col-sm-8 col-xl-5">
+                        <h3 class="text-blue font-italic"> Creed </h3>
+                        <dl class="row">
+                            <dt class="col-md-4"> Directed by: </dt>
+                            <dd class="col-md-8"> Ryan Coogler </dd>
+                            <dt class="col-md-4"> Running time: </dt>
+                            <dd class="col-md-8"> 133 minutes </dd>
+                            <dt class="col-md-4"> Starring: </dt>
+                            <dd class="col-md-8"> Michael B. Jordan, Sylvester Stallone, Tessa Thompson, Phylicia Rashad, Anthony Bellew</dd>
+                            <dt class="col-md-4"> Release date: </dt>
+                            <dd class="col-md-8"> November 19, 2015 </dd>
+                            <dt class="col-md-4"> Country:</dt>
+                            <dd class="col-md-8"> USA </dd>
+                            <dt class="col-md-4"> Popularity:</dt>
+                            <dd class="col-md-8"> X % </dd>
+                        </dl>
+                        <a class="btn btn-outline-blue" href="html_films/creed.html"> Details </a>
+                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart"></i>
+                        </button>
+
+                    </div>
+                    <div class="col-xl-4  rounded">
+                        <h3 class="text-center"> Showings </h3>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Kinoteka </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 28 May
+                                <br/>
+                                <b> Time: </b> 22:00
+                                <br/>
+                                <b> Cost: </b> 400 RSD
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Cineplexx TC Usce </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 30 May
+                                <br/>
+                                <b> Time: </b> 13:30
+                                <br/>
+                                <b> Cost: </b> 300 RSD
+                            </div>
+                        </div>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Academy 28 </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 2 June
+                                <br/>
+                                <b> Time: </b> 18:00
+                                <br/>
+                                <b> Cost: </b> 300 RSD
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============== KILLER ELITE ================ -->
+                <div class="row mt-3">
+                    <div class="col-sm-4 col-xl-3">
+                        <img src="images/films/KillerElite.jpg" class="img-fluid mx-auto d-block" alt="killer Elite">
+                    </div>
+
+                    <div class="col-sm-8 col-xl-5">
+                        <h3 class="text-blue font-italic"> Killer Elite </h3>
+                        <dl class="row">
+                            <dt class="col-md-4"> Directed by: </dt>
+                            <dd class="col-md-8"> Gary McKendry </dd>
+                            <dt class="col-md-4"> Running time: </dt>
+                            <dd class="col-md-8"> 114 minutes </dd>
+                            <dt class="col-md-4"> Starring: </dt>
+                            <dd class="col-md-8"> Jason Statham, Yvonne Strahovski, Clive Owen, Robert De Niro, Dominic Purcell</dd>
+                            <dt class="col-md-4"> Release date: </dt>
+                            <dd class="col-md-8"> September 10, 2011 </dd>
+                            <dt class="col-md-4"> Country:</dt>
+                            <dd class="col-md-8"> USA </dd>
+                            <dt class="col-md-4"> Popularity:</dt>
+                            <dd class="col-md-8"> X % </dd>
+                        </dl>
+                        <a class="btn btn-outline-blue" href="html_films/creed.html"> Details </a>
+                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="col-xl-4  rounded">
+                        <h3 class="text-center"> Showings </h3>
+                        <div class="mt-3 card text-center">
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Fontana </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 24 May
+                                <br/>
+                                <b> Time: </b> 17:00
+                                <br/>
+                                <b> Cost: </b> 350 RSD
+                            </div>
+                            <div class="card-header bg-blue p-1 font-weight-bold font-italic"> Academy 28 </div>
+                            <div class="card-body p-0">
+                                <b> Date: </b> 26 May
+                                <br/>
+                                <b> Time: </b> 22:00
+                                <br/>
+                                <b> Cost: </b> 300 RSD
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ============== PAGINATION ================ -->
+                <div class="row mt-5 mb-3">
+                    <div class="col-12">
+                        <nav aria-label="Film page navigation">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tab-index="-1" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="films2.html">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="films2.html" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ============== FOOTER ================ -->
+    <footer class="container-fluid mt-3 py-3 bg-black text-light">
+        <div class="row">
+            <div class="col text-center">
+                <a href="#" class="text-blue">
+                    <i class="fa fa-arrow-up h3 float-right" title="Back to the top"></i>
+                </a>
+                <p class="font-italic m-0">&copy; 2018 Marija Kostić, Stefan Milanović</p>
+                <p class="m-0">Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade</p>
+
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
