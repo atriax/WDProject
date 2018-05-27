@@ -113,8 +113,8 @@ Department of Software Engineering, Faculty of Electrical Engineering, Universit
 - sponsors.html OK
 - contact.html OK
 - repertoire.html OK
-- films.html -- prevesti na srpski filmove
-- film.html
+- films.html OK
+- film.html OK
 - showings.html OK
 - tickets.html OK
 - actors.html OK
