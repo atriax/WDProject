@@ -373,8 +373,8 @@ function showFavourites(sr) {
             var film = sr ? films_sr[j] : films[j];
             html += "<div class=\"col-6 col-md-3 mb-3\"><a href=html_films/";
             html += film.link;
-            html += "><h4 class=\"text-blue text-center\">" + film.name + "</h4><img class=\"img-fluid\" src=\"images/films/" + film.img + "\" alt=\" " + film.name + "\" >";
-            html += "</a></div>";
+            html += "><img class=\"img-fluid\" src=\"images/films/" + film.img + "\" alt=\" " + film.name + "\" >";
+            html += "<h4 class=\"text-blue text-center\">" + film.name + "</h4></a></div>";
         }
         if (cnt % 4 == 3) {
             html += "</div>"

@@ -117,7 +117,7 @@ Department of Software Engineering, Faculty of Electrical Engineering, Universit
 - film.html
 - showings.html OK
 - tickets.html OK
-- actors.html -- prevesti na srpski glumci2
-- actor.html 
-- news.html 
-- favourites.html
+- actors.html OK
+- actor.html OK
+- news.html ОК
+- favourites.html OK

@@ -12,7 +12,10 @@
     /* dropdown menu on hover */
     .dropdown:hover>.dropdown-menu {
         display: block;
-    }
+        /* width: 100%;
+        height: 100%;*/
+    } 
+
 }
 
 /* large and wider */
@@ -33,8 +36,7 @@
     .carousel-item img {
         height: 400px;
     }
-
-    #main_news img {    
+    #main_news img {
         max-height: 400px;
     }
 }
@@ -61,12 +63,10 @@
         width: 75% !important;
         margin: auto;
     }
-
     .carousel-item img {
         height: 200px;
     }
-
-    #main_news img {    
+    #main_news img {
         max-height: 200px;
     }
 }
@@ -77,7 +77,6 @@
     #festival-title {
         font-size: 22px !important;
     }
-
     #recommendations {
         font-size: 1.8rem !important;
     }
