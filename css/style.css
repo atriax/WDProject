@@ -2,6 +2,7 @@ body {
     font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 /* navbar */
 
 #main-navbar .nav-link {
@@ -12,6 +13,11 @@ body {
     border: 1px solid #3E97D6;
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3E97D6;
+}
 /* index icons */
 
 .hover-border-blue:hover {
@@ -67,8 +73,6 @@ body {
     text-align: center;
 }
 
-
-
 .force-to-bottom {
     position: absolute;
     bottom: 5%;
@@ -77,6 +81,9 @@ body {
 
 #main_news img {
     border-radius: 5px;
+
+    margin: 0 auto;
+    max-height: 500px;
 }
 
 #main_news h3 {

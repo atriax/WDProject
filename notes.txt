@@ -46,7 +46,7 @@ index.html - DONE
 - namestiti linkove ka vestima DONE
 - namestiti linkove ka filmovima DONE
 - namestiti fotografiju banera i linkove sa njih ?
-- izmizliti tekst i slike za about DONE
+- izmizliti tekst i slike za about DONE FALI NA SRPSKOM!
 - podesiti alt za banere DONE
 
 info.html DONE
@@ -67,21 +67,22 @@ sponsors.html
 contact.html
 - DONE
 
-repertoire.html DONE
+repertoire.html DONE NA SRPSKOM?
 - popraviti tekst
 	
 films.html(fali na drugoj stranici samo zameniti filmove)
-- popraviti sort!
+- popraviti sort! DONE
 - ubaciti linkove ka glumcima NE MORA
-- napraviti sort za showings
-- napraviti srpsku verziju
-- podesiti da rade srca - skidanje, niz booleana
+- napraviti sort za showings DONE
+- napraviti srpsku verziju -- Postoji ali treba prevesti polja, radi sa novim nizom koji treba popuniti na srpkom jeziku
+- podesiti da rade srca - skidanje, niz booleana DONE
 
 film.html
-- dodati jos filmova (ispopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js) DONE
-- za filmove na sprposkom napraviti novi niz sa podacima na srpskom
-- proveriti regex, trenbalo bi da rade
-- podesiti lokacije
+- dodati jos filmova (iskopiras postojeci film i samo promenis id u onload, pre toga popunis niz u script.js) DONE
+-- za srpske filmove u onload staviti kao drugi parametar true!!!
+- za filmove na sprposkom napraviti novi niz sa podacima na srpskom DONE -- napravljen ali treba prevesti neka polja na srpski
+- proveriti regex, trebalo bi da rade
+- podesiti lokacije DONE dodati koordinate na kraj kreiranje objekta Film
 
 showings.html
 - DONE
@@ -94,12 +95,11 @@ actors.html
 actor.html
 - dodati jos glumaca
 
-news.html
-- slike su cudne
+news.html DONE
+- slike su cudne DONE
 
 favourites.html
-- napraviti stranicu na srpskom
-- omogućiti ovaj mehanizam
-
+- napraviti stranicu na srpskom DONE
+- omogućiti ovaj mehanizam DONE
 
 Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade

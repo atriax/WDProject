@@ -33,6 +33,10 @@
     .carousel-item img {
         height: 400px;
     }
+
+    #main_news img {    
+        max-height: 400px;
+    }
 }
 
 /* small and narrower */
@@ -60,6 +64,10 @@
 
     .carousel-item img {
         height: 200px;
+    }
+
+    #main_news img {    
+        max-height: 200px;
     }
 }
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Films</title>
+    <title>Favourites</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="showFavourites()">
+<body onload="showFavourites(false)">
     <!-- ============== FILM FESTIVAL NAVBAR ================ -->
     <nav class="navbar navbar-expand-md navbar-light bg-blue">
         <div class="navbar-brand">
@@ -34,7 +34,7 @@
                 <span class="h1 align-middle text-black" id="festival-title">Film Festival 2018</span>
             </a>
         </div>
-        <a href="filmovi.html" id="language" class="ml-auto mr-1">
+        <a href="omiljeno.html" id="language" class="ml-auto mr-1">
             <img src="images/srb_flag_48.png" alt="serbian-language" class="mr-auto d-none d-sm-block">
             <img src="images/srb_flag_32.png" alt="serbian-language" class="mr-auto d-sm-none">
         </a>
@@ -105,10 +105,7 @@
                                 <i class="fa fa-home"></i>
                             </a>
                         </li>
-                        <li class="breadcrumb-item">
-                            <a href="repertoire.html">Repertoire</a>
-                        </li>
-                        <li class="breadcrumb-item active" aria-current="page">Films</li>
+                        <li class="breadcrumb-item active" aria-current="page">Favourites</li>
                     </ol>
                 </nav>
 

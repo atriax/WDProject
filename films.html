@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="showFilms(0)">
+<body onload="showFilms(0, false)">
     <!-- ============== FILM FESTIVAL NAVBAR ================ -->
     <nav class="navbar navbar-expand-md navbar-light bg-blue">
         <div class="navbar-brand">
@@ -121,9 +121,9 @@
             <nav class="col-md-3 col-xl-2 mb-3">
                 <div class="btn-group-vertical w-100" role="group">
                     <span class="btn btn-outline-blue active font-weight-bold">Sort films</span>
-                    <a href="" class="btn btn-outline-blue" onclick="sort(0, 0)">By name</a>
-                    <a href="" class="btn btn-outline-blue" onclick="sort(1, 0)">By showing</a>
-                    <a href="" class="btn btn-outline-blue" onclick="sort(2, 0)">By popularity</a>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(0, 0, false)">By name</a>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(1, 0, false)">By showing</a>
+                    <a href="" class="btn btn-outline-blue" onclick="sort(2, 0, false)">By popularity</a>
                 </div>
             </nav>
 
@@ -153,12 +153,12 @@
                         </dl>
 
                         <a class="btn btn-outline-blue" href="html_films/" id="link1"> Details </a>
-                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
-                            <i class="far fa-heart"></i>
+                        <button type="button" id="favourite1" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart" id="heart1"></i>
                         </button>
                     </div>
                     <div class="col-xl-4  rounded">
-                        <h3 class="text-center"> Showings </h3>
+                        <h3 class="text-center text-blue"> Showings </h3>
                         <div class="mt-3 card text-center" id="showing11">
                             <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place11">  </div>
                             <div class="card-body p-0">
@@ -225,12 +225,12 @@
                         </dl>
 
                         <a class="btn btn-outline-blue" href="html_films/" id="link2"> Details </a>
-                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
-                            <i class="far fa-heart"></i>
+                        <button type="button" id="favourite2" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart" id="heart2"></i>
                         </button>
                     </div>
                     <div class="col-xl-4  rounded">
-                        <h3 class="text-center"> Showings </h3>
+                        <h3 class="text-center text-blue"> Showings </h3>
                         <div class="mt-3 card text-center" id="showing21">
                             <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place21">  </div>
                             <div class="card-body p-0">
@@ -297,12 +297,12 @@
                         </dl>
 
                         <a class="btn btn-outline-blue" href="html_films/" id="link3"> Details </a>
-                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
-                            <i class="far fa-heart"></i>
+                        <button type="button" id="favourite3" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart" id="heart3"></i>
                         </button>
                     </div>
                     <div class="col-xl-4  rounded">
-                        <h3 class="text-center"> Showings </h3>
+                        <h3 class="text-center text-blue"> Showings </h3>
                         <div class="mt-3 card text-center" id="showing31">
                             <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place31">  </div>
                             <div class="card-body p-0">
@@ -369,12 +369,12 @@
                         </dl>
 
                         <a class="btn btn-outline-blue" href="html_films/" id="link4"> Details </a>
-                        <button type="button" class="btn btn-outline-blue ml-4" onclick="">
-                            <i class="far fa-heart"></i>
+                        <button type="button" id="favourite4" class="btn btn-outline-blue ml-4" onclick="">
+                            <i class="far fa-heart" id="heart4"></i>
                         </button>
                     </div>
                     <div class="col-xl-4  rounded">
-                        <h3 class="text-center"> Showings </h3>
+                        <h3 class="text-center text-blue"> Showings </h3>
                         <div class="mt-3 card text-center" id="showing41">
                             <div class="card-header bg-blue p-1 font-weight-bold font-italic" id="place41">  </div>
                             <div class="card-body p-0">
