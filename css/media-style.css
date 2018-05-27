@@ -77,4 +77,8 @@
     #festival-title {
         font-size: 22px !important;
     }
+
+    #recommendations {
+        font-size: 1.8rem !important;
+    }
 }

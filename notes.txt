@@ -103,3 +103,21 @@ favourites.html
 - omogućiti ovaj mehanizam DONE
 
 Department of Software Engineering, Faculty of Electrical Engineering, University of Belgrade
+
+
+- index.html OK
+- info.html  OK
+- about.html OK
+- juries.html OK
+- awards.html OK
+- sponsors.html OK
+- contact.html OK
+- repertoire.html OK
+- films.html -- prevesti na srpski filmove
+- film.html
+- showings.html OK
+- tickets.html OK
+- actors.html -- prevesti na srpski glumci2
+- actor.html 
+- news.html 
+- favourites.html
