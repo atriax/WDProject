@@ -616,7 +616,7 @@ films_sr = [
         [
             new Showing("Fontana", "24 Maj", "19:30", "300RSD"),
             new Showing("Cineplexx TC Usce", "25 Maj", "22:00", "350RSD"),
-            new Showing("Kultirni Centar Beograda", "26 Maj", "18:00", "400RSD")
+            new Showing("Kulturni Centar Beograda", "26 Maj", "18:00", "400RSD")
         ],
         "BladeRunner2049.png",
         "bladerunner2049.html",
